@@ -33,6 +33,7 @@
 }
 body {
   background-color: black;
+  margin: 0;
 }
 
 .four-oh-four {
@@ -65,8 +66,9 @@ body {
 .terminal .prompt {
   color: #1ff042;
   display: block;
-  font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
-  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+  /* Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace */
+  /* text-transform: uppercase; */
   font-size: 0.9em;
   letter-spacing: 0.15em;
   white-space: pre-wrap;
@@ -111,4 +113,34 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+}
+.box-header{
+  position: fixed;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: white;
+  top: 0em;
+  height: 25px;
+  width: 100%;
+  z-index: 1;
+}
+.box-header p {
+  margin: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.box-footer{
+  position: fixed;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: salmon;
+  bottom: 0em;
+  height: 25px;
+  width: 100%;
+}
+.box-footer span {
+  position: absolute;
+  color: white;
+  margin: 5px;
+  font-weight: bold;
+  text-align: center;
 }
