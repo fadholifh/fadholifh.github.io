@@ -15,7 +15,7 @@ $('.four-oh-four-form').on('submit', function(e){
   var val = $(this).children($('.404-input')).val().toLowerCase();
   var href;
 
-	 if (val === 'kittens'){
+	 if (val === 'fad'){
     showKittens();
   }else {
     resetForm();
@@ -71,17 +71,12 @@ function resetForm(withKittens){
 		});
 
 		$('.new-output').velocity(
-			'scroll'
+			'scroll',
+			
 		), {duration: 100}
 
 		setTimeout(function(){
-			var gif;
-
-			$.get('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=kittens', function(result){
-				gif = result.data.image_url;
-				$('.terminal').append('<img class="kitten-gif" src="' + gif + '"">');
-				resetForm(true);
-			});
+			resetForm(true)
 		}, (lines.length * 100) + 1000);
 	}
 
