@@ -64,7 +64,7 @@ body {
   padding: 4rem;
 }
 .terminal .prompt {
-  color: #1ff042;
+  color: #FFC107;
   display: block;
   font-family: 'Courier New', Courier, monospace;
   /* Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace */
@@ -89,7 +89,7 @@ body {
   width: 0.75em;
   height: 1em;
   margin-left: 5px;
-  background: #1ff042;
+  background: #FFC107;
   box-shadow: 1px 1px 1px rgba(31, 240, 66, 0.65), -1px -1px 1px rgba(31, 240, 66, 0.65), 1px -1px 1px rgba(31, 240, 66, 0.65), -1px 1px 1px rgba(31, 240, 66, 0.65);
   -webkit-animation: cursor-blink 1.25s steps(1) infinite;
   -moz-animation: cursor-blink 1.25s steps(1) infinite;
@@ -201,4 +201,14 @@ body {
 .soc{
   text-decoration: none;
   color: #000000;
+}
+
+.soc:hover{
+  text-decoration: none;
+  color: #333;
+  transition: ease-in 0.5;
+}
+
+.s72{
+  font-size:72px;
 }
