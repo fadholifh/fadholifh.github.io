@@ -119,3 +119,27 @@ function resetForm(withKittens){
 	    for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
 	    return o;
 	};
+
+
+
+window.setTimeout("waktu()", 1000);
+n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+
+document.getElementById("date").innerHTML = `${m}/${d}/${y}|`;
+
+$(document).ready(function(){
+	function clock() {
+	  let now = new Date();
+	  let secs = ('0' + now.getSeconds()).slice(-2);
+	  let mins = ('0' + now.getMinutes()).slice(-2);
+	  let hr = now.getHours();
+	  let Time = hr + ":" + mins + ":" + secs;
+	  document.getElementById("time").innerHTML = Time;
+	  requestAnimationFrame(clock);
+	}
+
+	requestAnimationFrame(clock);
+});
